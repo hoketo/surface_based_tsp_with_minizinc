@@ -22,7 +22,24 @@ solve
 :: restart_luby(50)
 :: bool_search(x, first_fail, indomain_min, complete)
 minimize objective;
-  
+
+% ================================================================================
+% Constraints
+% ================================================================================
+
+% Dual Edge Consistency
+constraint forall(e in 1..E) (
+  y[e] = (x[u_dual_edges[e]] /\ x[v_dual_edges[e]])
+);
+
+% Degree constraints, for each primal edge
+constraint forall(p in 1..P
+                  where pe_triangle_incidence_length[p] > 2)(
+  sum(i in 0..pe_triangle_incidence_length[p]-1)(
+    bool2int(x[ pe_triangle_incidence_indices[ pe_triangle_incidence_start[p] + i ] ])
+  ) <= 2
+);
+
 % --------------------------------------------------------------------------------
 % Global Connectivity
 % --------------------------------------------------------------------------------
