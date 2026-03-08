@@ -1,5 +1,5 @@
 % Load Problem-Specific Data
-include "data/berlin52.mzn";
+include "data/berlin52.dzn";
 
 % Load Helper Functions (depends on problem data)
 include "instance_utilities.mzn";

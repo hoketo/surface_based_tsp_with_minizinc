@@ -1,5 +1,5 @@
 % Load Problem-Specific Data
-include "data/burma14.mzn";
+include "data/burma14.dzn";
 
 % Load Helper Functions (depends on problem data)
 include "instance_utilities.mzn";
