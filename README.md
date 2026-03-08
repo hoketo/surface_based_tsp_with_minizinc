@@ -89,9 +89,6 @@ instance_utilities.mzn
 
 global_connectivity/
     Connectivity constraints enforcing a single tree
-    global_tree_flow.mzn
-    global_tree_mtz.mzn
-    global_tree_native.mzn
 
 local_connectivity/
     Local topological / Euler constraints
