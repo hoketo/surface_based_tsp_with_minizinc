@@ -125,13 +125,13 @@ CP solvers
 Example using a MIP solver:
 
 ```bash
-minizinc dual_surface_tsp_mip.mzn data/berlin52.dzn --solver highs
+minizinc dual_surface_tsp_mip.mzn data/berlin52.dzn --solver highs --intermediate-solutions
 ```
 
 Example using a CP solver:
 
 ```bash
-minizinc dual_surface_tsp_cp.mzn data/berlin52.dzn --solver chuffed
+minizinc dual_surface_tsp_cp.mzn data/burma14.dzn --solver chuffed --intermediate-solutions
 ```
 
 The models can also be executed from the MiniZinc IDE.
