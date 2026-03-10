@@ -1,3 +1,5 @@
+![Banner](berlin52.png)
+
 # Surface-Based TSP (MiniZinc Models)
 
 This repository contains MiniZinc models for the planar simplification of the surface-based Traveling Salesman Problem (TSP) formulation described in:
