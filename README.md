@@ -63,6 +63,12 @@ The instances correspond to **triangulated candidate sets**. Because the optimiz
 
 Pre-rendered output visualizations for several instances are available in the `output_images/` folder.
 
+Some instance files in `data/` are derived from public benchmark sources such as TSPLIB benchmark instances and other published TSP instance collections.
+
+These files contain preprocessing and transformation specific to this repository.
+MIT licensing applies to the transformation logic and file structure only.
+Underlying benchmark data remain attributable to their original sources.
+
 ---
 
 ## Repository structure
